@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anecdotario Ultra Anormal - Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #ff6600;
+        }
+        .post {
+            margin-bottom: 40px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        #comentarios {
+            margin-top: 50px;
+            border-top: 1px solid #666;
+            padding-top: 20px;
+        }
+        #comentarios textarea, #comentarios input[type="text"], #comentarios input[type="submit"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anecdotario Ultra Anormal</h1>
+        <h2>Bienvenidos al umbral de lo desconocido</h2>
+    </header>
+    
+    <div class="post">
+        <h2>El misterio de los criptidos</h2>
+        <p>¿Has escuchado hablar de los criptidos? Son criaturas cuya existencia no ha sido comprobada científicamente, como el Chupacabras o el Yeti. ¿Qué opinas sobre estos enigmas de la naturaleza?</p>
+        <img src="criptido.jpg" alt="Ilustración de un criptido">
+    </div>
+
+    <!-- Agregamos más "posts" aquí -->
+
+    <div id="comentarios">
+        <h2>Comentarios</h2>
+        <form action="guardar_comentario.php" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required><br>
+            <textarea name="comentario" rows="4" placeholder="Deja tu comentario aquí" required></textarea><br>
+            <input type="submit" value="Enviar Comentario">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Anecdotario Ultra Anormal</p>
+    </footer>
+</body>
+</html>
